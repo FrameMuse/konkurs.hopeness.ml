@@ -1,0 +1,872 @@
+body.noscroll {
+min-height:100%;
+width: 100%;
+overflow:hidden;
+}
+#cssload-pgloading {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    }
+
+#cssload-pgloading:after {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+}
+#cssload-pgloading .cssload-loadingwrap {position:absolute;top:45%;bottom:45%;left:25%;right:25%;}
+#cssload-pgloading .cssload-bokeh {
+		font-size: 97px;
+		width: 1em;
+		height: 1em;
+		position: relative;
+		margin: 0 auto;
+		list-style: none;
+		padding:0;
+		border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+}
+
+#cssload-pgloading .cssload-bokeh li {
+		position: absolute;
+		width: .2em;
+		height: .2em;
+		border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(1) {
+		left: 50%;
+		top: 0;
+		margin: 0 0 0 -.1em;
+		background: rgb(0,193,118);
+		transform-origin: 50% 250%;
+		-o-transform-origin: 50% 250%;
+		-ms-transform-origin: 50% 250%;
+		-webkit-transform-origin: 50% 250%;
+		-moz-transform-origin: 50% 250%;
+		animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(2) {
+		top: 50%; 
+		right: 0;
+		margin: -.1em 0 0 0;
+		background: rgb(255,0,60);
+		transform-origin: -150% 50%;
+		-o-transform-origin: -150% 50%;
+		-ms-transform-origin: -150% 50%;
+		-webkit-transform-origin: -150% 50%;
+		-moz-transform-origin: -150% 50%;
+		animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(3) {
+		left: 50%; 
+		bottom: 0;
+		margin: 0 0 0 -.1em;
+		background: rgb(250,190,40);
+		transform-origin: 50% -150%;
+		-o-transform-origin: 50% -150%;
+		-ms-transform-origin: 50% -150%;
+		-webkit-transform-origin: 50% -150%;
+		-moz-transform-origin: 50% -150%;
+		animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(4) {
+		top: 50%; 
+		left: 0;
+		margin: -.1em 0 0 0;
+		background: rgb(136,193,0);
+		transform-origin: 250% 50%;
+		-o-transform-origin: 250% 50%;
+		-ms-transform-origin: 250% 50%;
+		-webkit-transform-origin: 250% 50%;
+		-moz-transform-origin: 250% 50%;
+		animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+}
+
+
+
+
+
+
+
+@keyframes cssload-rota {
+		from { }
+		to { transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-rota {
+		from { }
+		to { -o-transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-rota {
+		from { }
+		to { -ms-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-rota {
+		from { }
+		to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-rota {
+		from { }
+		to { -moz-transform: rotate(360deg); }
+}
+
+@keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-o-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-ms-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-webkit-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-moz-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+
+/* ==================================================
+   CSS Imports
+================================================== */
+
+@import url("reset.css");
+
+/* ==================================================
+   Icon Fonts
+================================================== */
+
+@import url("fonts/fontawesome/font-awesome.css");
+
+/* ==================================================
+   Google Fonts
+================================================== */
+
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600,600italic,700,700italic");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic");
+
+/* ==================================================
+   Global Styles
+================================================== */
+
+*
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html, body
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+html
+{
+	height: 100%;
+	background: #FFF url("../images/bg.jpg") no-repeat;
+	background-size: cover;
+	
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	font-family: "Roboto Condensed", Arial, Verdana, Helvetica, sans-serif;
+	font-size: 20px;
+	color: #FFF;
+	line-height: 32px;
+	font-weight: 300;
+	
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+::selection
+{
+	background: #1ABC9C;
+	color: #FFF;
+}
+
+::-moz-selection
+{
+	background: #1ABC9C;
+	color: #FFF;
+}
+
+a
+{
+	color: #1ABC9C;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #FFF;
+}
+
+img
+{
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+/* ==================================================
+   Layout Styles
+================================================== */
+
+#outercont
+{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+	#outercont #innercont
+	{
+		display: inline-block;
+		width: 100%;
+		padding: 25px;
+	}
+	
+		#outercont #innercont .bodycontainer
+		{
+			margin: 0 auto;
+			width: 100%;
+			max-width: 1140px;
+		}
+	
+/* ==================================================
+   Sections
+================================================== */
+
+#content
+{
+	padding: 40px 25px;
+	text-align: left;
+	background: url("../images/bg-transparent.png") repeat;
+	text-align: center;
+}
+
+	#content p
+	{
+		margin: 0 0 20px 0;
+	}
+	
+		#content p:last-child
+		{
+			margin-bottom: 0;
+		}
+	
+	#content strong
+	{
+		font-weight: 600;
+	}
+	
+	#content em
+	{
+		font-style: italic;
+	}
+	
+		/** Main Header **/
+		
+		#content .input[type="submit"], .input[type="password"], .input[type="text"], a.xer
+		{
+			display: inline-block;
+			color: #FFF;
+			font-size: 60px;
+			line-height: 60px;
+			font-weight: 700;
+			letter-spacing: -0.6px;
+			font-family: "Roboto Condensed";
+			text-transform: uppercase;
+			margin: 0 0 25px 0;
+			padding: 10px 16px;
+			background: #50C878;
+			border: none;
+			outline: none;
+			transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+			-webkit-box-shadow: 0px 1px 4px 0px rgba(255,255,255,0.37);
+			-moz-box-shadow: 0px 1px 4px 0px rgba(255,255,255,0.37);
+			box-shadow: 0px 1px 4px 0px rgba(255,255,255,0.37);
+		}
+		#content .input[type="submit"]:hover, .input[type="password"]:hover, .input[type="text"]:hover, a.xer:hover 
+		{
+		-webkit-box-shadow: 0px 8px 10px 1px rgba(255,255,255,0.37);
+		-moz-box-shadow: 0px 8px 10px 1px rgba(255,255,255,0.37);
+		box-shadow: 0px 8px 10px 1px rgba(255,255,255,0.37);
+		transition: box-shadow 0.28s cubic-bezier(0.4,0,0.2,1);
+		}
+		/** Countdown Timer **/
+		
+		#countdowncont
+		{
+			width: 100%;
+			max-width: 600px;
+			margin: 0 auto;
+			margin-bottom: 20px;
+		}
+
+			#countdowncont ul#countscript li
+			{
+				float: left;
+				width: 25%;
+				padding: 0;
+				margin: 0;
+				list-style-type: none;
+			}
+
+				#countdowncont ul#countscript li span
+				{
+					font-size: 58px;
+					line-height: 58px;
+					font-weight: 700;
+					color: #FFF;
+					font-family: "Roboto Condensed";
+				}
+
+				#countdowncont ul#countscript li p
+				{
+					color: rgba(255, 255, 255, 0.6);
+					text-transform: uppercase;
+					font-size: 16px;
+					line-height: 16px;
+					margin: 0;
+				}
+
+		/** Social Media **/
+		
+		#socialmedia ul
+		{
+			margin: 0;
+		}
+
+			#socialmedia ul li
+			{
+				display: inline-block;
+				list-style-type: none;
+				margin: 0 12px 0 0;
+				padding: 0;
+			}
+
+				#socialmedia ul li a
+				{
+					font-size: 27px;
+				}
+				
+#copyright
+{
+	padding: 20px 0 0 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+/* ==================================================
+   Responsive Media Queries - Tablets
+================================================== */
+
+@media screen and (max-width: 1100px)
+{
+	
+	#outercont #innercont
+	{
+		padding: 25px;
+	}
+	
+	#content
+	{
+		padding: 25px;
+	}
+	
+		#content .input[type="submit"], .input[type="password"], .input[type="text"]
+		{
+			font-size: 40px;
+			line-height: 50px;
+		}
+	
+		/** Countdown Timer **/
+		
+		#countdowncont
+		{
+			max-width: 400px;
+		}
+		
+			#countdowncont ul#countscript li
+			{
+				width: 50%;
+				padding: 10px 0;
+			}
+input.sec {
+width: 125px;
+font-size: 30px;
+}
+}
+
+/* ==================================================
+   Responsive Media Queries - Mobiles
+================================================== */
+
+@media screen and (max-width: 480px)
+{		
+	
+	#outercont #innercont
+	{
+		padding: 15px;
+	}
+
+	#content
+	{
+		padding: 15px;
+	}
+	
+		/** Countdown Timer **/
+		
+		#countdowncont ul#countscript li
+		{
+			padding: 6px 0;
+		}
+
+			#countdowncont ul#countscript li p
+			{
+				font-size: 16px;
+				line-height: 16px;
+			}
+	
+}
+
+.input[type="password"], .input[type="text"]
+{
+	background-color: white;	
+	color: silver;
+}
+input.sec {
+	display: inline;
+	margin-right: 60px;
+	margin-left: 15px;
+	padding: 40px;
+	border-radius: 75px;
+	border: 8px solid #22a9c9;
+	background: transparent;
+	font: bold 40px fantasy;
+	color: white;
+	width: 155px;
+   text-align: center;
+}
+label {
+	font: bold 30px fantasy;
+} 
+section {
+	display: inline-block;
+	margin-right: 25px;
+   float: left;
+
+}
+.secs {
+   margin: 0 auto;
+   width: 675px;
+}
+.data {
+   max-height: 160px;
+}
+#s1, #s2, #s3 {
+				/*position: absolute;
+			    left: -300em !important;*/
+	margin-left: -200em;
+   transition-duration: 20s;
+		}
+body.noscroll {
+min-height:100%;
+width: 100%;
+overflow:hidden;
+}
+#cssload-pgloading {
+    background: white;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    }
+
+#cssload-pgloading:after {
+		content: "";
+		z-index: -1;
+		position: absolute;
+		top: 0; right: 0; bottom: 0; left: 0;
+}
+#cssload-pgloading .cssload-loadingwrap {position:absolute;top:45%;bottom:45%;left:25%;right:25%;}
+#cssload-pgloading .cssload-bokeh {
+		font-size: 97px;
+		width: 1em;
+		height: 1em;
+		position: relative;
+		margin: 0 auto;
+		list-style: none;
+		padding:0;
+		border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+}
+
+#cssload-pgloading .cssload-bokeh li {
+		position: absolute;
+		width: .2em;
+		height: .2em;
+		border-radius: 50%;
+		-o-border-radius: 50%;
+		-ms-border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(1) {
+		left: 50%;
+		top: 0;
+		margin: 0 0 0 -.1em;
+		background: rgb(0,193,118);
+		transform-origin: 50% 250%;
+		-o-transform-origin: 50% 250%;
+		-ms-transform-origin: 50% 250%;
+		-webkit-transform-origin: 50% 250%;
+		-moz-transform-origin: 50% 250%;
+		animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 1.64s linear infinite,
+				cssload-opa 5.32s ease-in-out infinite alternate;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(2) {
+		top: 50%; 
+		right: 0;
+		margin: -.1em 0 0 0;
+		background: rgb(255,0,60);
+		transform-origin: -150% 50%;
+		-o-transform-origin: -150% 50%;
+		-ms-transform-origin: -150% 50%;
+		-webkit-transform-origin: -150% 50%;
+		-moz-transform-origin: -150% 50%;
+		animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 2.7s linear infinite,
+				cssload-opa 6.22s ease-in-out infinite alternate;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(3) {
+		left: 50%; 
+		bottom: 0;
+		margin: 0 0 0 -.1em;
+		background: rgb(250,190,40);
+		transform-origin: 50% -150%;
+		-o-transform-origin: 50% -150%;
+		-ms-transform-origin: 50% -150%;
+		-webkit-transform-origin: 50% -150%;
+		-moz-transform-origin: 50% -150%;
+		animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 2.1s linear infinite,
+				cssload-opa 7.42s ease-in-out infinite alternate;
+}
+
+#cssload-pgloading .cssload-bokeh li:nth-child(4) {
+		top: 50%; 
+		left: 0;
+		margin: -.1em 0 0 0;
+		background: rgb(136,193,0);
+		transform-origin: 250% 50%;
+		-o-transform-origin: 250% 50%;
+		-ms-transform-origin: 250% 50%;
+		-webkit-transform-origin: 250% 50%;
+		-moz-transform-origin: 250% 50%;
+		animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-o-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-ms-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-webkit-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+		-moz-animation: 
+				cssload-rota 2.49s linear infinite,
+				cssload-opa 7.61s ease-in-out infinite alternate;
+}
+
+
+
+
+
+
+
+@keyframes cssload-rota {
+		from { }
+		to { transform: rotate(360deg); }
+}
+
+@-o-keyframes cssload-rota {
+		from { }
+		to { -o-transform: rotate(360deg); }
+}
+
+@-ms-keyframes cssload-rota {
+		from { }
+		to { -ms-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes cssload-rota {
+		from { }
+		to { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes cssload-rota {
+		from { }
+		to { -moz-transform: rotate(360deg); }
+}
+
+@keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-o-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-ms-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-webkit-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
+
+@-moz-keyframes cssload-opa {
+		0% { }
+		12.0% { opacity: 0.80; }
+		19.5% { opacity: 0.88; }
+		37.2% { opacity: 0.64; }
+		40.5% { opacity: 0.52; }
+		52.7% { opacity: 0.69; }
+		60.2% { opacity: 0.60; }
+		66.6% { opacity: 0.52; }
+		70.0% { opacity: 0.63; }
+		79.9% { opacity: 0.60; }
+		84.2% { opacity: 0.75; }
+		91.0% { opacity: 0.87; }
+}
